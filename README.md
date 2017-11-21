@@ -1,0 +1,2 @@
+# Settings
+.bashrc, .dircolors
