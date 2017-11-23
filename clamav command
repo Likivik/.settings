@@ -1,0 +1,1 @@
+sudo clamscan -i -r / > ~/Desktop/clamav.log
