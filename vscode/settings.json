@@ -1,0 +1,96 @@
+{   
+    /* Esling Settings */
+    "eslint.nodePath": "./node_modules/.bin/eslint",
+    "eslint.autoFixOnSave": true,
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+    "[vue]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+    "eslint.options": {
+        "extensions": [".html", ".js", ".vue", ".jsx"]
+    },
+    "eslint.validate": [
+        {
+            "language": "html",
+            "autoFix": true
+        },
+        {
+            "language": "vue",
+            "autoFix": true
+        },
+        {
+            "language": "javascript",
+            "autoFix": true
+        },
+        {
+            "language": "javascriptreact",
+            "autoFix": true
+        }
+    ],
+    /*******************/
+
+    "workbench.colorCustomizations": {
+            // Material Theme
+        // "activityBarBadge.background": "#00BCD4",
+        // "list.activeSelectionForeground": "#00BCD4",
+        // "list.inactiveSelectionForeground": "#00BCD4",
+        // "list.highlightForeground": "#00BCD4",
+        // "scrollbarSlider.activeBackground": "#00BCD450",
+        // "editorSuggestWidget.highlightForeground": "#00BCD4",
+        // "textLink.foreground": "#00BCD4",
+        // "progressBar.background": "#00BCD4",
+        // "pickerGroup.foreground": "#00BCD4",
+            // End of Material Theme
+        // Border separating the title bar from the rest of the editor
+        "titleBar.border": "#1069c9"
+        // Border color to separate Tabs from each other
+        // "tab.border": "#18222D",
+        // Border color on the top separating to the editor (terminal)
+        // "panel.border": "#18222D",
+        // Border color on the side separating the editor
+        // "sideBar.border": "#18222D",
+        // Border color with the Side Bar
+        // "activityBar.border": "#18222D",
+        // Border color separating the Status Bar and editor
+        // "statusBar.border": "#18222D",
+        // Border color to separate multiple editor groups from each other
+        // "editorGroup.border": "#18222D",
+        // Border color of the editor group title header when tabs are enabled
+        // "editorGroupHeader.tabsBorder": "#18222D"
+    },
+    /////////////////////////////////////////////
+    "files.autoSave": "onWindowChange",
+    "editor.tabSize": 2,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.cursorStyle": "line-thin",
+    "editor.showFoldingControls": "always",
+    "sync.gist": "9ac5aad61a20c60f7a4ab9398f389206",
+    "sync.lastUpload": "",
+    "sync.autoDownload": false,
+    "sync.autoUpload": true,
+    "sync.lastDownload": "2017-10-20T08:37:52.204Z",
+    "sync.forceDownload": false,
+    "sync.anonymousGist": false,
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    // "editor.lineHeight": 32,
+    "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true,
+    "editor.renderLineHighlight": "gutter",
+    "workbench.activityBar.visible": true,
+    "window.menuBarVisibility": "toggle",
+    "editor.minimap.enabled": false,
+    "workbench.sideBar.location": "left",
+    "workbench.statusBar.visible": true,
+    "typescript.check.npmIsInstalled": false,
+    "editor.renderControlCharacters": true,
+    "editor.renderIndentGuides": true,
+    "editor.wordWrap": "off",
+    "workbench.colorTheme": "Dobri Next -C02- Indigo"
+}
