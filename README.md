@@ -18,7 +18,7 @@ KDE and Gnome are too hungry for my 2013 laptop. And Gnome just looks bad to me,
 
 ## Terminal
 * **Terminator**
-* (Possibly) **Tilix**
+* **Tilix** (Possibly)
   - if becomes dragable (doesn't allow resize in quake mode on all DEs)
 ## Code Editor
 * **Visual Studio Code**
