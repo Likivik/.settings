@@ -13,6 +13,7 @@
 - **Bungie**
 - **Openbox** - for dying machines
 - **Xfce** - if all else fails
+
 KDE and Gnome are too hungry for my 2013 laptop. And Gnome just looks bad to me, while KDE = terrible defaults, complicated settings.
 
 ## Terminal
