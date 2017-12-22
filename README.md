@@ -28,4 +28,4 @@ KDE and Gnome are too hungry for my 2013 laptop. And Gnome just looks bad to me,
 * **Firefox** - I still believe in them
   
 # Perfectionism/ADD aspirations
-- Create that perfect personal Icon Pack
+- Create that perfect personal Icon Pack (Someting between Paper and Flat Remix)
