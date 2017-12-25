@@ -16,16 +16,17 @@
 
 KDE and Gnome are too hungry for my 2013 laptop. And Gnome just looks bad to me, while KDE = terrible defaults, complicated settings.
 
+## File Manager
+ - **Nemo** (cuz Nautilus sucks)
+ 
 ## Terminal
 * **Terminator**
-* **Tilix** (Possibly)
-  - if becomes dragable (doesn't allow resize in quake mode on all DEs)
+* **Tilix** (Possibly) - if becomes dragable (doesn't allow resize in quake mode on all DEs)
 ## Code Editor
 * **Visual Studio Code**
-  ### Plugins
-  - Settings Sync
+
 ## Browser
-* **Firefox** - I still believe in them
+* **Firefox** - Because that new UI.
   
 # Perfectionism/ADD aspirations
 - Create that perfect personal Icon Pack (Someting between Paper and Flat Remix)
