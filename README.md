@@ -27,6 +27,13 @@ KDE and Gnome are too hungry for my 2013 laptop. And Gnome just looks bad to me,
 
 ## Browser
 * **Firefox** - Because that new UI.
-  
-# Perfectionism/ADD aspirations
+## Other Aplications
+* **Variety** - change desktop wallpaper dynamically, cool stuff.
+* **Gnome-tweak-tools** - for budgie DE
+
+## Icons
+* **Flat remix**
+* **Paper**
+
+#### Perfectionism/ADD aspirations
 - Create that perfect personal Icon Pack (Someting between Paper and Flat Remix)
