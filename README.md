@@ -24,7 +24,7 @@ KDE and Gnome are too hungry for my 2013 laptop. And Gnome just looks bad to me,
 * **Tilix** (Possibly) - if becomes dragable (doesn't allow resize in quake mode on all DEs)
 ## Code Editor
 * **Visual Studio Code**
-* **Sublime Text 3** - to edit as root
+* **Sublime Text 3** - to edit as root, because sublime can do that and it's super fast ofcourse.
 
 ## Browser
 * **Firefox** - Because that new UI.
