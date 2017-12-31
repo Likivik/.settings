@@ -1,0 +1,46 @@
+/* Not selected tabs background*/
+.tabbrowser-tab > .tab-stack > .tab-background:not([selected=true]) > spacer {
+  /*background: rgba(255,255,255, 0.7);*/
+  background: rgba(140,140,140, 0.2);
+}
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]) > spacer {
+  /*background: rgba(240,240,240, 0.1);*/
+  background: rgba(140,140,140, 0.2);
+}
+
+
+:root {
+	/* Visibility of a barely visible, thin line between tabs and main panel */
+	/*--tabs-border-color: transparent;*/
+	/* Color of selected tab */
+	--tab-line-color: #000 !important;
+}
+
+
+/* Color of NOT selected tabs's line*/
+.tab-line:not([selected=true]) {
+  background: rgba(0,0,0, 0.4) !important;
+}
+/* Sets tab-line to be visible always of NOT selected tabs*/
+.tabbrowser-tab > .tab-stack > .tab-background > .tab-line:not([selected=true]) {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Makes the border between tabs actually visible (or rather better suited to my liking)*/
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  opacity: 0.4; 
+}
+
+
+.findbar-button > .toolbarbutton-text,
+toolbarbutton.bookmark-item:not(.subviewbutton),
+toolbar .toolbarbutton-1 > .toolbarbutton-icon,
+toolbar .toolbarbutton-1 > .toolbarbutton-text,
+toolbar .toolbarbutton-1 > .toolbarbutton-badge-stack {
+	padding: var(--toolbarbutton-inner-padding);
+	border-radius: 0 !important;
+} 
