@@ -55,10 +55,9 @@
         - fonts-firacode # beautiful, has ligatures
         - firefox # Browser
         - sublime-text # view system files
-        - typora # Gorgeous Markdown
     
     - name: Install Typora (unsigned)
-      package: 
+      apt: 
         name: typora
         state: latest
       allow_unauthenticated: true
