@@ -50,9 +50,6 @@
         name: "{{item}}"
         state: latest
       with_items:
-        - git # ...
-        - tilix # terminal emulator
-        - fonts-firacode # beautiful, has ligatures
         - firefox # Browser
         - sublime-text # view system files
     
@@ -71,10 +68,10 @@
         - playonlinux
         - winetricks
 
-    # - name: Install --classic Snaps
-    #   command: snap install "{{item}}" --classic
-    #   with_items: 
-    #     - vscode
+     - name: Install --classic Snaps
+       command: snap install "{{item}}" --classic
+       with_items: 
+         - vscode
     
     - name: Switch Fn key off by default for Apple keyboard
       command: echo options hid_apple fnmode=2 | sudo tee -a /etc/modprobe.d/hid_apple.conf
@@ -91,8 +88,8 @@
 
 ### in ~/.config
 # - autostart folder
-# - sublime-text
-      
+# - tilix # terminal emulator (GTK setups)
+# - fonts-firacode # beautiful, has ligatures
 ### Examples/Reminder
 
 #ansible localhost -m apt -a "pkg=git state=latest" --become-user=SomeUser --become-method=su --ask-become-pass
