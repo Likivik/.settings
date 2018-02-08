@@ -18,7 +18,7 @@
       with_items: 
         - { keyserver: 'keyserver.ubuntu.com', id: '36A1D7869245C8950F966E92D8576A8BA88D21E9' }
 
-    - name: Add PPA adn deb
+    - name: Add PPA and deb
       apt_repository:
         repo: "{{item}}"
       with_items: 
@@ -56,7 +56,13 @@
         - firefox # Browser
         - sublime-text # view system files
         - typora # Gorgeous Markdown
-
+    
+    - name: Install Typora (unsigned)
+      package: 
+        name: typora
+        state: latest
+      allow_unauthenticated: true
+    
     - name: Install Wine
       package: 
         name: "{{item}}"
