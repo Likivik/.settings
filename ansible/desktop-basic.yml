@@ -26,6 +26,7 @@
         - ppa:alexlarsson/flatpak # Flatpak
         - deb https://download.sublimetext.com/ apt/stable/ # Sublime
         - deb http://typora.io linux/ # Typora
+        - ppa:daniruiz/flat-remix # Flat Remix Icons
         
     - name: Update Package Cache & Set up APT to work with https sources # for Sublime-Text
       package: 
@@ -34,20 +35,14 @@
 
 ##############  TASKS  ##############
   tasks:
-    - name: Install Snapd & snapd-login-service
+    - name: Install Snap and Flatpak
       package: 
         name: "{{item}}"
         state: latest
       with_items:
         - snapd
         - snapd-login-service
-
-    - name: Install Flatpak
-      package: 
-        name: "{{item}}"
-        state: latest
-      with_items:
-        - flatpak    
+        - flatpak  
 
     - name: Install Essential Desktop Packages
       package: 
@@ -85,8 +80,12 @@
       become: false #oterwise ~ means root lol
 
 
+####################################
+# Possible additions
 
-
+### in ~/.config
+# - autostart folder
+# - sublime-text
       
 ### Examples/Reminder
 
