@@ -81,7 +81,7 @@
         - playonlinux
         - winetricks
 
-     - name: Install --classic Snaps
+     - name: Install classic Snaps
        command: snap install "{{item}}" --classic
        with_items: 
          - vscode
