@@ -2,6 +2,7 @@
 
 - hosts: localhost
   become: true
+  become_method: su
 
 ##############  PRE-TASKS  ##############
   pre_tasks:
@@ -27,7 +28,6 @@
         - deb https://download.sublimetext.com/ apt/stable/ # Sublime
         - deb http://typora.io linux/ # Typora
         - ppa:daniruiz/flat-remix # Flat Remix Icons
-      become: true
         
     - name: Update Package Cache & Set up APT to work with https sources # for Sublime-Text
       package: 
