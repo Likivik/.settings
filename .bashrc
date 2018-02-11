@@ -40,11 +40,15 @@ alias mkdir='mkdir -v'
 }
 ##########################
 
-export EDITOR=nvim
+export EDITOR=subl
 
 if [[ $LANG = '' ]]; then
 	export LANG=en_US.UTF-8
 fi
+
+### Ansible
+source ~/bin/ansible/hacking/env-setup -q # Put ansible on PATH -quiet mode
+export ANSIBLE_INVENTORY=~/ansible_hosts
 
 ##########################
 #    The End For Now...  #
