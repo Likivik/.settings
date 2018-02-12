@@ -28,8 +28,18 @@
       with_items: 
         - deb https://download.sublimetext.com/ apt/stable/ # Sublime
         - deb http://typora.io linux/ # Typora'
+     
+    - name: Add deb
+      apt_repository:
+        repo: "{{item}}"
+        state: present
+      with_items: 
+        - sudo add-apt-repository ppa:webupd8team/terminix
+      when: 
+        - ansible_distribution == 'Ubuntu'
+        - ansible_distribution == 'Linux Mint'
       
-    - name: Add PPA (Ubuntu NAMED distros only)
+    - name: Add PPA (Ubuntu codeNAMED repos only)
       apt_repository:
         repo: "{{item}}"
         state: present
@@ -64,11 +74,11 @@
         - firefox # Browser
         - git
         - sublime-text # view system files
-        - yakuake # dropdown terminal with easy shortcut
+        - tilix # terminal
         - playonlinux
       ignore_errors: true
     
-    - name: Install Typora (unsigned)
+    - name: Install Unsigned (Typora)
       apt: 
         name: typora
         state: latest
