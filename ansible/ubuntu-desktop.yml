@@ -21,7 +21,7 @@
       with_items: 
         - { keyserver: 'keyserver.ubuntu.com', id: '36A1D7869245C8950F966E92D8576A8BA88D21E9' }
 
-    - name: Add PPA and deb
+    - name: Add deb
       apt_repository:
         repo: "{{item}}"
         state: present
@@ -29,7 +29,7 @@
         - deb https://download.sublimetext.com/ apt/stable/ # Sublime
         - deb http://typora.io linux/ # Typora'
       
-    - name: Add PPA and deb
+    - name: Add PPA (Ubuntu NAMED distros only)
       apt_repository:
         repo: "{{item}}"
         state: present
