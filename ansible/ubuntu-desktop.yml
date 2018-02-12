@@ -27,11 +27,17 @@
         state: present
       with_items: 
         - 'ppa:peterlevi/ppa' # Variety
-        - 'ppa:alexlarsson/flatpak' # Flatpak
         - 'ppa:daniruiz/flat-remix' # Flat Remix Icons
         - deb https://download.sublimetext.com/ apt/stable/ # Sublime
-        - deb http://typora.io linux/ # Typora
-        
+        - deb http://typora.io linux/ # Typora'
+      
+    - name: Add PPA and deb
+      apt_repository:
+        repo: "{{item}}"
+        state: present
+      with_items: 
+        - 'ppa:alexlarsson/flatpak' # Flatpak
+      when: ansible_distribution == 'Ubuntu'
         
     - name: Update Package Cache & Set up APT to work with https sources # for Sublime-Text
       package: 
