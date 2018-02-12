@@ -63,8 +63,10 @@
         - firefox # Browser
         - git
         - sublime-text # view system files
+        - yakuake # dropdown terminal with easy shortcut
         - wine
         - playonlinux
+      ignore_errors: true
     
     - name: Install Typora (unsigned)
       apt: 
@@ -108,9 +110,6 @@
 # - autostart folder
 # - tilix # terminal emulator (GTK setups)
 ### Examples/Reminder
-
-
-#yakuake mate-tweaks
 
 ##########################
 #     UBUNTU FLAVORS     #
