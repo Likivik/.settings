@@ -60,6 +60,7 @@
         name: "{{item}}"
         state: latest
       with_items:
+        - geary
         - firefox # Browser
         - git
         - sublime-text # view system files
