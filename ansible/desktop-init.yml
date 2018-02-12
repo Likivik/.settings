@@ -65,7 +65,7 @@
         - git
         - sublime-text # view system files
         - yakuake # dropdown terminal with easy shortcut
-        - wine
+        - {{ wine }}
         - playonlinux
       ignore_errors: true
     
