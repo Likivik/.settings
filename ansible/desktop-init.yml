@@ -94,13 +94,13 @@
       with_items:
         - echo options hid_apple fnmode=2 | tee -a /etc/modprobe.d/hid_apple.conf
         - sudo update-initramfs -u -k all
-      when: ansible_distribution == "Ubuntu"
+      # when: ansible_distribution == "Ubuntu"
       
-      - name: Switch Fn key off by default for Apple keyboard (Inux Mint)
-      command: "{{item}}"
-      with_items:
-        - echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode
-      when: ansible_distribution == "Linux Mint"
+      # - name: Switch Fn key off by default for Apple keyboard (Inux Mint)
+      # command: "{{item}}"
+      # with_items:
+      #   - echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode
+      # when: ansible_distribution == "Linux Mint"
 
     - name: Checkout .settings Repository
       git:
