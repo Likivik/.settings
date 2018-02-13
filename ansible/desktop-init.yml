@@ -92,7 +92,7 @@
     - name: Switch Fn key off by default for Apple keyboard (Ubuntu named)
       command: "{{item}}"
       with_items:
-        - echo options hid_apple fnmode=2 | tee -a /etc/modprobe.d/hid_apple.conf
+        - echo options hid_apple fnmode=2 | sudo tee -a /etc/modprobe.d/hid_apple.conf
         - sudo update-initramfs -u -k all
       # when: ansible_distribution == "Ubuntu"
       
