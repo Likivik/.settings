@@ -50,6 +50,26 @@ fi
 source ~/bin/ansible/hacking/env-setup -q # Put ansible on PATH -quiet mode
 export ANSIBLE_INVENTORY=~/ansible_hosts
 
+
+### So, my autocompletion was not working...
+# enable bash completion in interactive shells
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+
+### Tha fuuuuuck???
+### FUUUUUUUUUUCK!!!!
+#eval $(thefuck --alias)
+eval $(thefuck --alias)
+
 ##########################
 #    The End For Now...  #
 ##########################
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
